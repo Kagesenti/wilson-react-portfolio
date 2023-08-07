@@ -4,7 +4,7 @@ import { BurgerContainer } from './style';
 function Burger({ size, isActive, onClick}) {
 
     return (
-        <BurgerContainer size={size} isActive={isActive} onClick={onClick}>
+        <BurgerContainer $size={size} $isActive={isActive} onClick={onClick}>
             <div className="line"></div>
             <div className="line"></div>
             <div className="line"></div>
