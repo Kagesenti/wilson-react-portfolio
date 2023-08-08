@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { IntroductionContainer, CVButtonContainer } from './style'
-import { Link } from 'react-router-dom'
 import { styleContext } from '../../../context_providers/styleContext'
+const CV = require("../../../assets/CV/Wilson_Resume.pdf")
 
 const CVButton = () => {
   const { primaryColor, tertiaryColor } = useContext(styleContext)
@@ -9,11 +9,11 @@ const CVButton = () => {
   return (
     <>
       <CVButtonContainer $primaryColor={primaryColor} $tertiaryColor={tertiaryColor}>
-        <Link> 
+        <a href={CV}> 
           <div className='curriculum-vitae'>
             <p> Download CV </p>
           </div>
-        </Link>
+        </a>
       </CVButtonContainer>
     </>
 

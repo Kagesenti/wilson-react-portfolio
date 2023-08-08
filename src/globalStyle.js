@@ -7,7 +7,8 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         transition: background-color 1s ease-in-out;
         font-family: "Poppins", sans-serif;
-        color: #FFFFFF
+        color: #FFFFFF;
+        position: relative;
     }
 
     body {
@@ -40,6 +41,36 @@ const GlobalStyle = createGlobalStyle`
     
     ::-webkit-scrollbar-thumb:hover {
         background: ${props => {return props.$tertiaryColor}};
+    }
+
+    .slide-left {
+        opacity: 0;
+        right: 20%;
+    }
+
+    .slid-left {
+        opacity: 1;
+        right: 0;
+    }
+
+    .slide-right {
+        opacity: 0;
+        left: 20%;
+    }
+
+    .slid-right {
+        opacity: 1;
+        left: 0;
+    }
+
+    .fade {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    .faded {
+        transform: scale(1);
+        opacity: 1;
     }
 `
 
