@@ -5,9 +5,9 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-        transition: background-color 1s ease-in-out;
+        transition: background-color 1s ease-in-out, color 1s ease-in-out;
         font-family: "Poppins", sans-serif;
-        color: #FFFFFF;
+        color: ${props => {return props.$fontColor}};
         position: relative;
     }
 
@@ -21,6 +21,11 @@ const GlobalStyle = createGlobalStyle`
 
     span {
         color: ${props => {return props.$primaryColor}};
+    }
+
+    ::selection {
+        background-color: ${props => {return props.$primaryColor}};
+        color: #FFFFFF
     }
 
     ::-webkit-scrollbar {

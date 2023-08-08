@@ -1,10 +1,13 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect, useContext } from 'react'
 import { Card, CardContainer } from './style'
+import { styleContext } from '../../../../context_providers/styleContext'
 
 const Cards = ({ quantity, category }) => {
+  const { primaryColor, tertiaryColor } = useContext(styleContext)
+
   return (
     <>
-      <Card>
+      <Card $primaryColor={primaryColor} $tertiaryColor={tertiaryColor}>
         <h1>
           <span>{ quantity }</span>
         </h1>

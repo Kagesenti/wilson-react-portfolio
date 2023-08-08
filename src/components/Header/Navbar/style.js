@@ -46,3 +46,21 @@ export const NavbarItemContainer = styled.div`
         margin: 10px;
     }
 `
+
+export const ItemWrapper = styled.div`
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+    & #gear-icon {
+        &:hover {
+            cursor: pointer;
+        }
+        z-index: 1000;
+        transform: rotate(${props => {return props.$settingIsVisible ? 360 * 1 : 0}}deg);
+        
+
+        transition: all 1s ease-in-out;
+    }
+`

@@ -7,6 +7,7 @@ import About from './components/About_Me';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact_Me';
 import StyleContext from './context_providers/styleContext';
+import SettingContext from './context_providers/settingContext';
 
 const ScrollToTop = () => {
   const location = useLocation();
@@ -24,7 +25,7 @@ root.render(
   <BrowserRouter>
     <ScrollToTop />
     <Routes>
-      <Route path='/' element={<StyleContext><App /></StyleContext>}>
+      <Route path='/' element={<StyleContext><SettingContext><App /></SettingContext></StyleContext>}>
         <Route path='/' element={<Navigate to={"/home"}></Navigate>} />
         <Route path='/home' element={<Home />} />
         <Route path='/about' element={<About />} />

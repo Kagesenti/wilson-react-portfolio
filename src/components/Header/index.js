@@ -11,9 +11,8 @@ function Header() {
     <>
       <HeaderContainer $primaryColor={primaryColor} >
         <Wrapper $primaryColor={primaryColor}></Wrapper>
-        <h1>My Portfolio</h1>
+        <h1>W,G.P</h1>
         <Navbar></Navbar>
-
       </HeaderContainer>
     </>
     

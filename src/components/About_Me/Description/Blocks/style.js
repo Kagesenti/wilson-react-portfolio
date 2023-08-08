@@ -29,10 +29,18 @@ export const Card = styled.div`
     min-width: 150px;
     max-width: 250px;
     max-height: 250px;
+    border: 1px solid ${props => {return props.$tertiaryColor}};
 
     text-align: center;
 
     @media screen and (max-width: 576px) {
         max-width: 100%;
     }
+
+    &:hover {
+        border: 1px solid ${props => {return props.$primaryColor}};
+        transform: translateY(-10px);
+    }
+
+    transition: all 0.2s ease-in-out;
 `

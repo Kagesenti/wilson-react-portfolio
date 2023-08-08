@@ -4,17 +4,19 @@ import { Outlet } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import GlobalStyle from './globalStyle'
+import Settings from './components/Settings'
 
 function App() {
-  const { primaryColor, secondaryColor, tertiaryColor } = useContext(styleContext)
+  const { primaryColor, secondaryColor, tertiaryColor, fontColor } = useContext(styleContext)
 
   return (
     <>
-      <GlobalStyle $primaryColor={primaryColor} $secondaryColor={secondaryColor} $tertiaryColor={tertiaryColor}/>
+      <GlobalStyle $fontColor={fontColor} $primaryColor={primaryColor} $secondaryColor={secondaryColor} $tertiaryColor={tertiaryColor}/>
       <Header></Header>
       <main>
         <Outlet></Outlet>
       </main>
+      <Settings></Settings>
       <Footer></Footer>
     </>
   )
