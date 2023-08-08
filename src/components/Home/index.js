@@ -1,14 +1,18 @@
 import React, { useContext } from 'react'
-import { HomeContainer } from './style'
+import { HShape, HomeContainer } from './style'
 import { styleContext } from '../../context_providers/styleContext'
+import Profile from './Profile'
+import Introduction from './Introduction'
 
 function Home() {
-  const { primaryColor, secondaryColor, tertiaryColor } = useContext(styleContext)
+  const { primaryColor, secondaryColor } = useContext(styleContext)
 
   return (
     <>
       <HomeContainer $secondaryColor={secondaryColor}>
-
+        <HShape $primaryColor={primaryColor}></HShape>
+        <Profile></Profile>
+        <Introduction></Introduction>
       </HomeContainer>
     </>
   )

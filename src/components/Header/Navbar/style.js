@@ -6,7 +6,6 @@ export const NavbarContainer = styled.div`
     gap: 50px;
     justify-content: center;
     align-items: center;
-    z-index: 13;
 
     @media screen and (max-width: 768px){
         position: absolute;
@@ -27,6 +26,7 @@ export const NavbarItemContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 11;
 
     & a .underline {
         width: ${props => {return props.$isNavigate ? 100 : 0}}%;

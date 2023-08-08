@@ -29,9 +29,9 @@ export const BurgerContainer = styled.div`
         transform: ${(props) => (props.$isActive ? 'translateY(50%) rotate(-45deg)' : 'none')};
     }
 
-    z-index: 12;
+    z-index: 11;
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 769px){
         display: none;
     }
 `   

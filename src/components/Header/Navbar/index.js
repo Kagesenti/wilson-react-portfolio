@@ -23,7 +23,7 @@ const NavbarItems = ({ name, destination, setNavbarIsActive }) => {
 function Navbar() {
     const [navbarIsActive, setNavbarIsActive] = useState(false)
     const { primaryColor } = useContext(styleContext)
-    console.log("Hi")
+
 
     return (
         <>
@@ -31,7 +31,7 @@ function Navbar() {
                 <NavbarItems setNavbarIsActive={setNavbarIsActive} name={"Home"} destination={"/home"}></NavbarItems>
                 <NavbarItems setNavbarIsActive={setNavbarIsActive} name={"About Me"} destination={"/about"}></NavbarItems>
                 <NavbarItems setNavbarIsActive={setNavbarIsActive} name={"Portfolio"} destination={"/portfolio"}></NavbarItems>
-                <NavbarItems setNavbarIsActive={setNavbarIsActive} name={"Contact"} destination={"/Contact"}></NavbarItems>
+                <NavbarItems setNavbarIsActive={setNavbarIsActive} name={"Contact"} destination={"/contact"}></NavbarItems>
             </NavbarContainer>
             <Burger size={0.4} isActive={navbarIsActive} onClick={() => {setNavbarIsActive(!navbarIsActive)}}></Burger>
         </>

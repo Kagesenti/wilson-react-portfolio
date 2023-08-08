@@ -10,6 +10,8 @@ export const HeaderContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     position: relative;
+    box-shadow: 0px -1px 51px 32px rgba(0,0,0,0.75);
+    z-index: 3;
 
     h1 {
         z-index: 11;
