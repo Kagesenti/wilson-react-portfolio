@@ -65,6 +65,19 @@ export const PortfolioContainer = styled.div`
                 cursor: pointer;
             }
         }
+
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+
+            & .image {
+                width: 80%;
+            }
+
+            & .content {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
     }
 `
 
