@@ -22,7 +22,7 @@ export const Wrapper = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 80px;
     background-color: ${props => {return props.$primaryColor}};
     z-index: 10;

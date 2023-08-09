@@ -4,7 +4,7 @@ export const SettingsContainer = styled.div`
     position: fixed;
     bottom: 0;
     right: 10px;
-    width: 200px;
+    width: 200px;   
     height: ${props => {return props.$settingIsVisible ? 500 : 0}}px;
     background-color: ${props => {return props.$secondaryColor}};
     opacity: ${props => {return props.$settingIsVisible ? 1 : 0}};
@@ -25,6 +25,7 @@ export const SettingsContainer = styled.div`
 
     @media screen and (max-width: 768px) {
         width: 100%;
+        right: 0px;
     }
 `
 
