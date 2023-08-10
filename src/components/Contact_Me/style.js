@@ -2,6 +2,14 @@ import { styled } from "styled-components";
 
 export const ContactContainer = styled.div`
     width: 100%;
-    min-height: calc(100vh - 80px);
+    height: calc(100vh - 80px);
     background-color: ${props => {return props.$secondaryColor}};
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+
+    @media screen and (max-width: 889px) {
+        height: auto;
+    }
 `
