@@ -30,7 +30,7 @@ export const GetInTouchContainer = styled.div`
     position: relative;
     gap: 40px;
     box-shadow: 0px -1px 18px 1px rgba(0,0,0,0.75);
-    z-index: 5;
+    z-index: 1;
     
     @media screen and (max-width: 889px) {
         max-width: none;
