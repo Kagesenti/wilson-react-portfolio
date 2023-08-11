@@ -27,12 +27,11 @@ const Input = styled.input`
   background-color: ${props => {return props.$secondaryColor}};
   border-bottom: 1px solid #FFFFFF;
   outline: none;
+  transition: background-color 1s ease-in-out, border 0.2s ease-in-out;
 
   &:focus {
     border-bottom: 1px solid ${props => {return props.$primaryColor}};
   }
-
-  transition: all 0.2s ease-in-out;
 `;
 
 const TextArea = styled.textarea`
@@ -45,12 +44,11 @@ const TextArea = styled.textarea`
   border: none;
   border-bottom: 1px solid #FFFFFF;
   outline: none;
+  transition: background-color 1s ease-in-out, border 0.2s ease-in-out;
 
   &:focus {
     border-bottom: 1px solid ${props => {return props.$primaryColor}};;
   }
-
-  transition: all 0.2s ease-in-out;
 `;
 
 const StatusMessage = styled.p`
@@ -77,8 +75,6 @@ const EmailForm = () => {
   const [submitionCount, setSubmitionCount] = useState(0)
   const [countdown, setCountdown] = useState(0);
   const [isActive, setIsActive] = useState(false);
-
-  console.log("Hi!")
 
   useEffect(() => {
     const savedExpiration = localStorage.getItem('countdownExpiration');

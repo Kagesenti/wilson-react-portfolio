@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useRef } from 'react'
 import { styleContext } from '../../../context_providers/styleContext'
-import { FormContainer, GetInTouchContainer, GetInTouchDescriptionContainer, GetInTouchInformationContainer, SendAnEmailContainer, GetInTouchInformation } from './style'
+import { FormContainer, GetInTouchContainer, GetInTouchDescriptionContainer, GetInTouchInformationContainer, SendAnEmailContainer, GetInTouchInformation, WrapperGetInTouch, WrapperSendAnEmail } from './style'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { informationDetails } from './informationDetails'
 import EmailForm from './EmailForm'
@@ -38,10 +38,8 @@ const GetInTouchComponent = () => {
         entries.forEach((el) => {
             if (el.isIntersecting) {
             el.target.classList.add("slid-left")
-            console.log("Observe")
 
             } else if (!el.isIntersecting) {
-            console.log("Unobserve")
 
             if (el.target.classList.contains("slid-left")) {
                 observer.unobserve(el.target)
@@ -54,7 +52,8 @@ const GetInTouchComponent = () => {
 
   return (
     <>
-    <GetInTouchContainer ref={ref} className='slide-left' $primaryColor={primaryColor} $secondaryColor={secondaryColor} $tertiaryColor={tertiaryColor}>
+    <WrapperGetInTouch ref={ref} className='slide-left'>
+      <GetInTouchContainer $primaryColor={primaryColor} $secondaryColor={secondaryColor} $tertiaryColor={tertiaryColor}>
         <GetInTouchDescriptionContainer>
           <h1><span> Let's get in touch </span></h1>
           <p>
@@ -67,6 +66,7 @@ const GetInTouchComponent = () => {
           )})}
         </GetInTouchInformationContainer>
       </GetInTouchContainer>
+    </WrapperGetInTouch>
     </>
   )
 }
@@ -81,10 +81,8 @@ const SendAnEmailComponent = () => {
       entries.forEach((el) => {
         if (el.isIntersecting) {
           el.target.classList.add("slid-right")
-          console.log("Observe")
 
         } else if (!el.isIntersecting) {
-          console.log("Unobserve")
 
           if (el.target.classList.contains("slid-right")) {
             observer.unobserve(el.target)
@@ -97,9 +95,11 @@ const SendAnEmailComponent = () => {
 
   return (
     <>
-      <SendAnEmailContainer ref={ref} className='slide-right' $secondaryColor={secondaryColor} $tertiaryColor={tertiaryColor}>
+    <WrapperSendAnEmail ref={ref} className='slide-right'>
+      <SendAnEmailContainer $secondaryColor={secondaryColor} $tertiaryColor={tertiaryColor}>
         <EmailForm></EmailForm>
       </SendAnEmailContainer>
+    </WrapperSendAnEmail>
     </>
   )
 }

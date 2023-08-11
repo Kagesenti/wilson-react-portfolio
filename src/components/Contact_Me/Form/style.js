@@ -1,5 +1,34 @@
 import { styled } from "styled-components";
 
+export const WrapperGetInTouch = styled.div`
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 600px;
+    transition: all 1s ease-in-out;
+    z-index: 1;
+
+    @media screen and (max-width: 889px) {
+        max-width: none;
+        max-height: none;
+    }
+`
+
+export const WrapperSendAnEmail = styled.div`
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 700px;
+    max-height: 600px;
+    transition: all 1s ease-in-out;
+
+    @media screen and (max-width: 889px) {
+        max-width: none;
+        max-height: none;
+    }
+`
+
 export const FormContainer = styled.div`
     width: 100%;
     height: 100%;
@@ -20,8 +49,6 @@ export const FormContainer = styled.div`
 export const GetInTouchContainer = styled.div`
     width: 100%;
     height: 100%;
-    max-width: 400px;
-    max-height: 600px;
     border: 1px solid ${(props) => {return props.$tertiaryColor}};
     background-color: ${(props) => {return props.$secondaryColor}};
     padding: 40px;
@@ -30,7 +57,6 @@ export const GetInTouchContainer = styled.div`
     position: relative;
     gap: 40px;
     box-shadow: 0px -1px 18px 1px rgba(0,0,0,0.75);
-    z-index: 1;
     
     @media screen and (max-width: 889px) {
         max-width: none;
@@ -73,8 +99,6 @@ export const GetInTouchInformation = styled.div`
 export const SendAnEmailContainer = styled.div`
     width: 100%;
     height: 100%;
-    max-width: 700px;
-    max-height: 600px;
     border: 1px solid ${(props) => {return props.$tertiaryColor}};
     background-color: ${(props) => {return props.$secondaryColor}};
     box-shadow: 0px -1px 18px 1px rgba(0,0,0,0.75);
