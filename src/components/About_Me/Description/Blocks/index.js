@@ -27,11 +27,9 @@ function Blocks() {
       entries.forEach((el) => {
         if (el.isIntersecting) {
           el.target.classList.add("slid-right")
-          console.log("Observe")
 
         } else if (!el.isIntersecting) {
-          console.log("Unobserve")
-
+          
           if (el.target.classList.contains("slid-right")) {
             observer.unobserve(el.target)
           }

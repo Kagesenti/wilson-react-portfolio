@@ -17,11 +17,9 @@ function Card({ title, image, description, link, handleModal }) {
         entries.forEach((el) => {
             if (el.isIntersecting) {
             el.target.classList.add("faded")
-            console.log("Observe")
 
             } else if (!el.isIntersecting) {
-            console.log("Unobserve")
-
+                
             if (el.target.classList.contains("faded")) {
                 observer.unobserve(el.target)   
             }

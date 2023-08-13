@@ -31,7 +31,7 @@ function Portfolio() {
           { modalIsVisible &&  
             <motion.div initial={{y: "-100vw", opacity: 0}} animate={{y: "0",opacity: 1}} exit={{y: "-100vw", opacity: 0}} transition={{duration: 0.5}} className='modal'>
               <div className="image">
-                <img src={modalContent.image} alt={modalContent.title} className='image'/>
+                <img src={modalContent.image} alt={modalContent.title}/>
               </div>
               <div className="content">
                 <h1>
@@ -39,6 +39,9 @@ function Portfolio() {
                 </h1>
                 <p>
                   {modalContent.description}
+                </p>
+                <p className='ps'>
+                  More than 10 seconds of loading-time means the server isn't online
                 </p>
               </div>
               <FontAwesomeIcon onClick={() => setModalIsVisible(false)} className='fa-2xl x-button' icon={faXmarkCircle}></FontAwesomeIcon>

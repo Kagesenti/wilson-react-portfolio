@@ -9,10 +9,8 @@ function Information() {
       entries.forEach((el) => {
         if (el.isIntersecting) {
           el.target.classList.add("slid-left")
-          console.log("Observe")
 
         } else if (!el.isIntersecting) {
-          console.log("Unobserve")
 
           if (el.target.classList.contains("slid-left")) {
             observer.unobserve(el.target)

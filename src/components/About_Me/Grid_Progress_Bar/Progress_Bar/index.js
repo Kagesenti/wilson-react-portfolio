@@ -12,10 +12,8 @@ function ProgressBar({ progress, title, index }) {
         entries.forEach((el) => {
             if (el.isIntersecting) {
             el.target.classList.add(isEven ? "slid-left" : "slid-right")
-            console.log("Observe")  
 
             } else if (!el.isIntersecting) {
-            console.log("Unobserve")
 
             if (el.target.classList.contains(isEven ? "slid-left" : "slid-right")) {
                 observer.unobserve(el.target)

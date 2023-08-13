@@ -22,6 +22,10 @@ export const PortfolioContainer = styled.div`
         padding: 20px;
         box-shadow: 0px -1px 18px 1px rgba(0,0,0,0.75);
 
+        & .ps {
+            color: ${props => {return props.$primaryColor}};
+        }
+
         & .image {
             display: flex;
             justify-content: center;
@@ -50,7 +54,7 @@ export const PortfolioContainer = styled.div`
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100%;
+            height: auto;
             width: 30%;
             gap: 20px;
         }
@@ -77,6 +81,11 @@ export const PortfolioContainer = styled.div`
                 width: 100%;
                 max-width: 400px;
             }
+        }
+
+        @media screen and (max-height: 750px) {
+            width: 90%;
+            height: 90%;
         }
     }
 `
