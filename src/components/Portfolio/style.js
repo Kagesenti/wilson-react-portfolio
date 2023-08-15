@@ -22,6 +22,18 @@ export const PortfolioContainer = styled.div`
         padding: 20px;
         box-shadow: 0px -1px 18px 1px rgba(0,0,0,0.75);
 
+        & .website-link { 
+            padding: 10px 30px 10px 30px;
+            background-color: ${props => {return props.$tertiaryColor}}; 
+            border-radius: 20px;
+
+            &:hover {
+                background-color: ${props => {return props.$primaryColor}};
+            }
+
+            transition: all 0.2s ease-in-out;
+        }
+
         & .ps {
             color: ${props => {return props.$primaryColor}};
         }
@@ -33,10 +45,16 @@ export const PortfolioContainer = styled.div`
             height: 100%;
             width: 50%;
 
-            img {
+            & img {
                 width: 100%;
                 height: auto;
+            }
 
+            & iframe {
+                width: 100%;
+                aspect-ratio: 1.776;
+                border-top: 1px solid ${props => {return props.$primaryColor}};
+                border-bottom: 1px solid ${props => {return props.$primaryColor}};
             }
         }
 

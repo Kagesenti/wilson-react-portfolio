@@ -6,7 +6,7 @@ import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 
-function Card({ title, image, description, link, handleModal }) {
+function Card({ title, image, description, link, handleModal, iFrame, websiteLink }) {
     const { primaryColor, secondaryColor, tertiaryColor } = useContext(styleContext)
     const [ curtainIsActive, setCurtainIsActive ] = useState(false)
 
@@ -38,7 +38,7 @@ function Card({ title, image, description, link, handleModal }) {
                         <a href={link}>
                             <FontAwesomeIcon className={"fa-2xl pointer"} icon={faGithub} />
                         </a>
-                        <FontAwesomeIcon onClick={() => {handleModal(title, image, description)}} className={"fa-2xl pointer"} icon={faQuestionCircle}></FontAwesomeIcon>
+                        <FontAwesomeIcon onClick={() => {handleModal(title, image, description, iFrame, websiteLink)}} className={"fa-2xl pointer"} icon={faQuestionCircle}></FontAwesomeIcon>
                     </Curtain>
                 </CardContainer>
             </CardWrapper>
