@@ -8,12 +8,12 @@ module.exports = [
         websiteLink: "https://gab-express.vercel.app/home"
     },
     {
-        title: "Under Construction",
-        image: require("../../assets/Images/Portfolio_Img/under_construction.jpg"),
-        description: "Evolution in Progress: Witness my journey through these portfolio cards, a testament to my growth. Brace for more exciting projects on the horizon, as improvement paves the way for a vibrant future!",
-        link: null,
+        title: "React Chess Game",
+        image: require("../../assets/Images/Portfolio_Img/React-Chess-Game.png"),
+        description: "A two-player React chess game that I built as a challenge for myself. I challenged myself to implement every aspect of the game by myself without the help of any resources.",
+        link: "https://sentinail.github.io/React-Chess",
         iFrame: null,
-        websiteLink: null
+        websiteLink: "https://sentinail.github.io/React-Chess"
     },
     {
         title: "Under Construction",
