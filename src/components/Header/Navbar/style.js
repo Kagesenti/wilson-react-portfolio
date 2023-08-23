@@ -9,7 +9,7 @@ export const NavbarContainer = styled.div`
 
     @media screen and (max-width: 768px){
         position: absolute;
-        bottom: ${props => {return props.$navbarIsActive ?  -213 : 0}}%;
+        top: ${props => {return props.$navbarIsActive ?  99 : -100}}%;
         left: 0px;  
         width: 100vw;
         background-color: black;

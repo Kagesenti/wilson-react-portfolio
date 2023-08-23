@@ -11,7 +11,7 @@ module.exports = [
         title: "React Chess Game",
         image: require("../../assets/Images/Portfolio_Img/React-Chess-Game.png"),
         description: "A two-player React chess game that I built as a challenge for myself. I challenged myself to implement every aspect of the game by myself without the help of any resources.",
-        link: "https://sentinail.github.io/React-Chess",
+        link: "https://github.com/Sentinail/React-Chess.git",
         iFrame: null,
         websiteLink: "https://sentinail.github.io/React-Chess"
     },

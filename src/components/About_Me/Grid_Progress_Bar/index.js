@@ -26,7 +26,7 @@ function GridProgressBar() {
     return (
         <>
             <GridProgressBarContainer>
-                <h1 ref={ref} className='fade'> MY SKILLS </h1>
+                <h1 ref={ref} className='fade'> <span>MY</span> SKILLS </h1>
                 <ProgressBarContainer>
                     { skills.map((skill, index) => {return <ProgressBar index={index} key={index} title={skill.title} progress={skill.progress}></ProgressBar>}) }
                 </ProgressBarContainer>
