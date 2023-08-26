@@ -16,12 +16,12 @@ module.exports = [
         websiteLink: "https://sentinail.github.io/React-Chess"
     },
     {
-        title: "Under Construction",
-        image: require("../../assets/Images/Portfolio_Img/under_construction.jpg"),
-        description: "Evolution in Progress: Witness my journey through these portfolio cards, a testament to my growth. Brace for more exciting projects on the horizon, as improvement paves the way for a vibrant future!",
-        link: null,
+        title: "React Form Validation",
+        image: require("../../assets/Images/Portfolio_Img/React_Form_Validation.png"),
+        description: "This straightforward project showcases my attempt at incorporating Redux/React-Redux to manage theme states, utilizing Formik for accessing form states, employing yup for form validation, implementing styled-components for styling, and integrating motion-framer to enhance animations.",
+        link: "https://github.com/Sentinail/formik-yup-redux_sample.git",
         iFrame: null,
-        websiteLink: null
+        websiteLink: "https://sentinail.github.io/formik-yup-redux_sample"
     },
     {
         title: "Under Construction",
