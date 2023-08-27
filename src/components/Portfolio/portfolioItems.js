@@ -24,11 +24,11 @@ module.exports = [
         websiteLink: "https://sentinail.github.io/formik-yup-redux_sample"
     },
     {
-        title: "Under Construction",
-        image: require("../../assets/Images/Portfolio_Img/under_construction.jpg"),
-        description: "Evolution in Progress: Witness my journey through these portfolio cards, a testament to my growth. Brace for more exciting projects on the horizon, as improvement paves the way for a vibrant future!",
-        link: null,
-        iFrame: null,
-        websiteLink: null
+        title: "PyGame 2D Ball Physics",
+        image: require("../../assets/Images/Portfolio_Img/PyGame_Ball_Physics.png"),
+        description: "In my third programming month, I crafted a 2D object interaction simulation. It synced objects with gravity, kinetic, and Coulomb forces, showcasing programming's fusion with physics and sparking my curiosity and growth.",
+        link: "https://github.com/Sentinail/2DBall_Physics_PyGame.git",
+        iFrame: "https://www.youtube.com/embed/SNep_2nQX84?si=L2C-z8SCxi9PqIMh",
+        websiteLink: "https://github.com/Sentinail/2DBall_Physics_PyGame.git"
     },
 ]
