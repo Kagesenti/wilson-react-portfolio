@@ -7,13 +7,24 @@ export const CardWrapper = styled.div`
 export const CardContainer = styled.div`
     aspect-ratio: 16/9;
     width: 300px;
-    background-image: url(${props => {return props.$image}});
-    background-size: cover;
     border-radius: 20px;
     overflow: hidden;
     border: 2px solid ${props => {return props.$tertiaryColor}};
     box-shadow: 0px -1px 18px 1px rgba(0,0,0,0.75);
     position: relative;
+
+    .portfolio_item_image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .loading_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
 
     &:hover {
         border: 2px solid ${props => {return props.$primaryColor}};
@@ -33,6 +44,9 @@ export const CardContainer = styled.div`
         transition: all 0.5s ease-in-out;
         overflow: hidden;
         gap: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
 
         & .pointer {
             cursor: pointer;

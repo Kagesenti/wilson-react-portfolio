@@ -1,11 +1,11 @@
 module.exports = [
     {
-        title: "Gab Express",
-        image: require("../../assets/Images/Portfolio_Img/Gab-Express.png"),
-        description: "Gab Express functions as a charitable online platform where users have the opportunity to offer assistance to individuals requiring support, while also being able to view a community engagement leaderboard.",
-        link: "https://github.com/Sentinail/gab-express",
-        iFrame: "https://www.youtube.com/embed/Dd54gHnztKw",
-        websiteLink: "https://gab-express.vercel.app/home"
+        title: "Hatsu Project",
+        image: require("../../assets/Images/Portfolio_Img/Hatsu_project.png"),
+        description: "Hatsu Project is an Anime streaming platform that offers a collection of diverse anime videos for free, all without the interruption of advertisements. This initiative was conceived to counter the excessive ad presence found on various other anime streaming sites.",
+        link: "https://github.com/Sentinail/hatsu-project.git",
+        iFrame: "https://www.youtube.com/embed/OO38R4UvcBY?si=nK5Vi_J2YscBNj9e",
+        websiteLink: "https://hatsu.vercel.app"
     },
     {
         title: "React Chess Game",
@@ -16,12 +16,12 @@ module.exports = [
         websiteLink: "https://sentinail.github.io/React-Chess"
     },
     {
-        title: "React Form Validation",
-        image: require("../../assets/Images/Portfolio_Img/React_Form_Validation.png"),
-        description: "This straightforward project showcases my attempt at incorporating Redux/React-Redux to manage theme states, utilizing Formik for accessing form states, employing yup for form validation, implementing styled-components for styling, and integrating motion-framer to enhance animations.",
-        link: "https://github.com/Sentinail/formik-yup-redux_sample.git",
-        iFrame: null,
-        websiteLink: "https://sentinail.github.io/formik-yup-redux_sample"
+        title: "Gab Express",
+        image: require("../../assets/Images/Portfolio_Img/Gab-Express.png"),
+        description: "Gab Express functions as a charitable online platform where users have the opportunity to offer assistance to individuals requiring support, while also being able to view a community engagement leaderboard.",
+        link: "https://github.com/Sentinail/gab-express",
+        iFrame: "https://www.youtube.com/embed/Dd54gHnztKw",
+        websiteLink: "https://gab-express.vercel.app/home"
     },
     {
         title: "PyGame 2D Ball Physics",
@@ -30,5 +30,13 @@ module.exports = [
         link: "https://github.com/Sentinail/2DBall_Physics_PyGame.git",
         iFrame: "https://www.youtube.com/embed/SNep_2nQX84?si=L2C-z8SCxi9PqIMh",
         websiteLink: "https://github.com/Sentinail/2DBall_Physics_PyGame.git"
+    },
+    {
+        title: "React Form Validation",
+        image: require("../../assets/Images/Portfolio_Img/React_Form_Validation.png"),
+        description: "This straightforward project showcases my attempt at incorporating Redux/React-Redux to manage theme states, utilizing Formik for accessing form states, employing yup for form validation, implementing styled-components for styling, and integrating motion-framer to enhance animations.",
+        link: "https://github.com/Sentinail/formik-yup-redux_sample.git",
+        iFrame: null,
+        websiteLink: "https://sentinail.github.io/formik-yup-redux_sample"
     },
 ]

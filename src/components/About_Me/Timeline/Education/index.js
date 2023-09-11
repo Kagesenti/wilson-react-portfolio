@@ -39,7 +39,7 @@ function Education() {
             }
             }
         })
-        }, {threshold: 0.5});
+        }, {threshold: 0.2});
         observer.observe(ref.current)
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])

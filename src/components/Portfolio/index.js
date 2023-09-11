@@ -32,7 +32,13 @@ function Portfolio() {
             <motion.div initial={{y: "-100vw", opacity: 0}} animate={{y: "0",opacity: 1}} exit={{y: "-100vw", opacity: 0}} transition={{duration: 0.5}} className='modal'>
               <div className="image">
                 { modalContent.iFrame ? 
-                <iframe src={modalContent.iFrame} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullscreen></iframe> 
+                <iframe src={modalContent.iFrame} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowFullScreen="allowfullscreen"
+                  mozallowfullscreen="mozallowfullscreen" 
+                  msallowfullscreen="msallowfullscreen" 
+                  oallowfullscreen="oallowfullscreen" 
+                  webkitallowfullscreen="webkitallowfullscreen">
+                </iframe> 
                 : 
                 <img src={modalContent.image} alt={modalContent.title}/>
                 }
