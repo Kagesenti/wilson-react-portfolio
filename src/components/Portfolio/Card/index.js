@@ -7,7 +7,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import LoadingComponent from '../../LoadingSkeleton/Loading'
 
 
-function Card({ title, image, description, link, handleModal, iFrame, websiteLink }) {
+function Card({ title, image, description, link, handleModal, iFrame, websiteLink, ps }) {
     const { primaryColor, secondaryColor, tertiaryColor } = useContext(styleContext)
     const [ curtainIsActive, setCurtainIsActive ] = useState(false)
     const [ isLoading, setIsLoading ] = useState(true)
@@ -42,7 +42,7 @@ function Card({ title, image, description, link, handleModal, iFrame, websiteLin
                         <a href={link}>
                             <FontAwesomeIcon className={"fa-2xl pointer"} icon={faGithub} />
                         </a>
-                        <FontAwesomeIcon onClick={() => {handleModal(title, image, description, iFrame, websiteLink)}} className={"fa-2xl pointer"} icon={faQuestionCircle}></FontAwesomeIcon>
+                        <FontAwesomeIcon onClick={() => {handleModal(title, image, description, iFrame, websiteLink, ps)}} className={"fa-2xl pointer"} icon={faQuestionCircle}></FontAwesomeIcon>
                     </Curtain>
                 </CardContainer>
             </CardWrapper>

@@ -14,9 +14,9 @@ function Portfolio() {
 
   const [ modalContent, setModalContent ] = useState({})
 
-  const handleModal = (title, image, description, iFrame, websiteLink) => {
+  const handleModal = (title, image, description, iFrame, websiteLink, ps) => {
     setModalIsVisible(!modalIsVisible)
-    setModalContent({title, image, description, iFrame, websiteLink})
+    setModalContent({title, image, description, iFrame, websiteLink, ps})
   }
 
   return (
@@ -24,7 +24,7 @@ function Portfolio() {
       <PortfolioContainer $primaryColor={primaryColor} $secondaryColor={secondaryColor} $tertiaryColor={tertiaryColor}>
         {!modalIsVisible && 
           <CardContainer>
-            {portfolioItems.map((item, index) => {return <Card handleModal={handleModal} websiteLink={item.websiteLink} iFrame={item.iFrame} key={index} title={item.title} image={item.image} description={item.description} link={item.link}></Card>})}
+            {portfolioItems.map((item, index) => {return <Card handleModal={handleModal} websiteLink={item.websiteLink} iFrame={item.iFrame} key={index} title={item.title} image={item.image} description={item.description} link={item.link} ps={item.ps}></Card>})}
           </CardContainer>
         }
         <AnimatePresence>
@@ -50,9 +50,14 @@ function Portfolio() {
                 <p>
                   {modalContent.description}
                 </p>
+
+                {modalContent.ps &&
+                
                 <p className='ps'>
-                  More than 10 seconds of loading-time means the server isn't online
+                  {modalContent.ps}
                 </p>
+                }
+                
                 { modalContent.websiteLink && <a className='website-link' href={modalContent.websiteLink}> Visit Project </a>}
               </div>
               <FontAwesomeIcon onClick={() => setModalIsVisible(false)} className='fa-2xl x-button' icon={faXmarkCircle}></FontAwesomeIcon>

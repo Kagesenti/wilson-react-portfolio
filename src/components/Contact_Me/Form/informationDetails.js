@@ -19,6 +19,6 @@ export const informationDetails = [
     {
         icon: faGlobe,
         context: "Website",
-        description: "gab-express.vercel.app"
+        description: "wilson-react-portfolio.vercel.app"
     }
 ]
