@@ -35,7 +35,7 @@ function Information() {
                 With a diverse set of skills, including proficiency in HTML, CSS, JavaScript, and more, 
                 I'm well-equipped to tackle any web development project that comes my way. Whether you 
                 need a simple static website or a complex web application, I'm confident that I can deliver 
-                a product that meets your needs and exceeds your expectations."
+                a product that meets your needs and exceeds your expectations.
             </p>
         </InformationContainer>
     </>

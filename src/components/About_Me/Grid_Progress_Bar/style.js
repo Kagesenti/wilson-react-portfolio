@@ -8,10 +8,12 @@ export const GridProgressBarContainer = styled.div`
     width: 100%;
     gap: 70px;
     margin-top: 100px;
+    max-width: 1170px;
 
     & h1 {
-        text-align: center;
+        text-align: start;
         transition: all 1s ease-in-out;
+        width: 100%;
     }
 `
 

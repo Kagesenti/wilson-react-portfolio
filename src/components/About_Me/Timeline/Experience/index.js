@@ -11,13 +11,15 @@ const ExperienceCard = ({ title, year, description }) => {
     return (
         <>
             <ExperienceCardContainer $secondaryColor={secondaryColor} $primaryColor={primaryColor} $tertiaryColor={tertiaryColor}>
-                <h2 > {year} </h2>
-                <p><span> {title} </span></p>
-                <p> {description} </p>
                 <div className="icon-circle">
                     <FontAwesomeIcon className='fa-lg' icon={faBriefcase}></FontAwesomeIcon>
                 </div>
+                <div className="content">
+                    <h2 > {year} </h2>
+                    <p><span> {title} </span></p>
+                    <p> {description} </p>
 
+                </div>
             </ExperienceCardContainer>
         </>
     )

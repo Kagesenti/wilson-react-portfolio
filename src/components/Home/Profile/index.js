@@ -1,6 +1,6 @@
 import React from 'react'
 import { ProfileContainer } from './style'
-const Portrait = require("../../../assets/Images/Portrait.jpg")
+const Portrait = require("../../../assets/Images/Portrait.png")
 
 function Profile() {
   return (

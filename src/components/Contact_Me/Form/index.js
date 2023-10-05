@@ -57,7 +57,7 @@ const GetInTouchComponent = () => {
         <GetInTouchDescriptionContainer>
           <h1><span> Let's get in touch </span></h1>
           <p>
-            We're open for any suggestion or just to have a chat
+            I'm open for any suggestion or just to have a chat
           </p>
         </GetInTouchDescriptionContainer>
         <GetInTouchInformationContainer>

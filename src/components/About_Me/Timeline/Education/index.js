@@ -11,13 +11,14 @@ const EducationCard = ({ title, year, description }) => {
     return (
         <>
             <EducationCardContainer $secondaryColor={secondaryColor} $primaryColor={primaryColor} $tertiaryColor={tertiaryColor}>
-                <h2 > {year} </h2>
-                <p><span> {title} </span></p>
-                <p> {description} </p>
                 <div className="icon-circle">
-                    <FontAwesomeIcon className='fa-lg' icon={faBookOpen}></FontAwesomeIcon>
+                        <FontAwesomeIcon className='fa-lg' icon={faBookOpen}></FontAwesomeIcon>
                 </div>
-
+                <div className="content">
+                    <h2 > {year} </h2>
+                    <p><span> {title} </span></p>
+                    <p> {description} </p>
+                </div>
             </EducationCardContainer>
         </>
     )

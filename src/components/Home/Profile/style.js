@@ -18,6 +18,8 @@ export const ProfileContainer = styled.div`
         width: 50%;
         height: auto;
         border-radius: 20px;
+        min-width: 300px;
+        transform: scaleX(-1);
     }
 
     @keyframes slide-right-fade {

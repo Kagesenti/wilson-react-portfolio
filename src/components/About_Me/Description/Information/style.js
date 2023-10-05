@@ -6,7 +6,7 @@ export const InformationContainer = styled.div`
     max-width: 500px;
 
     h1 {
-        text-align: center;
+        text-align: start;
     }
 
     p {

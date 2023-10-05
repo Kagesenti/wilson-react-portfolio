@@ -6,7 +6,6 @@ export const EducationContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 40px;
-
     
     & .title {
         text-align: start;
@@ -16,25 +15,14 @@ export const EducationContainer = styled.div`
 
     @media screen and (max-width: 768px) {
         width: 100%;
-
-        & .title {
-            text-align: center;
-        }
     }
 `
 
 export const EducationCardContainer = styled.div`
     width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    position: relative;
     border: 1px solid ${props => {return props.$tertiaryColor}};
     box-shadow: 0px -1px 18px 1px rgba(0,0,0,0.75);
-    padding: 20px;
-    position: relative;
-    background-color: ${props => {return props.$secondaryColor}};
-    min-height: 200px;
 
     &:hover {
         border: 1px solid ${props => {return props.$primaryColor}};
@@ -45,7 +33,19 @@ export const EducationCardContainer = styled.div`
         }
     }
 
-    
+    transition: all 0.2s ease-in-out;
+
+    & .content {
+        height: auto;
+        max-height: 200px;
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        background-color: ${props => {return props.$secondaryColor}};
+        min-height: 200px;
+    }
 
     & .icon-circle {
         position: absolute;
@@ -63,8 +63,6 @@ export const EducationCardContainer = styled.div`
         justify-content: center;
         align-items: center;
         box-shadow: 0px -1px 18px 1px rgba(0,0,0,0.75);
+        z-index: 5;
     }
-
-
-    transition: all 0.2s ease-in-out;
 `

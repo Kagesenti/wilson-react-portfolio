@@ -26,15 +26,23 @@ module.exports =
     },
     {
         "title": "MySQL",
-        "progress": 60
+        "progress": 70
     },
     {
         "title": "MongoDB",
-        "progress": 60
+        "progress": 65
+    },
+    {
+        "title": "AWS",
+        "progress": 70
+    },
+    {
+        "title": "Firebase",
+        "progress": 65
     },
     {
         "title": "Express",
-        "progress": 70
+        "progress": 80
     },
     {
         "title": "Nodejs",
@@ -42,6 +50,10 @@ module.exports =
     },
     {
         "title": "Git",
+        "progress": 70
+    },
+    {
+        "title": "Github",
         "progress": 70
     },
     {
