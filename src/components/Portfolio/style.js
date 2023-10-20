@@ -9,6 +9,7 @@ export const PortfolioContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 
     & .modal {
         display: flex;

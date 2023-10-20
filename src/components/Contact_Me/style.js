@@ -8,6 +8,7 @@ export const ContactContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 40px;
+    overflow-x: hidden;
 
     @media screen and (max-width: 889px) {
         height: auto;

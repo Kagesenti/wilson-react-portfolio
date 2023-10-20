@@ -11,4 +11,5 @@ export const AboutContainer = styled.div`
     padding-bottom: 100px;
     padding-left: 50px;
     padding-right: 50px;
+    overflow-x: hidden;
 `

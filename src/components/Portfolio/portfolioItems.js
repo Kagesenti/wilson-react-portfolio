@@ -4,7 +4,7 @@ module.exports = [
         image: require("../../assets/Images/Portfolio_Img/Hatsu_project.png"),
         description: "Hatsu Project is an Anime streaming platform that offers a collection of diverse anime videos for free, all without the interruption of advertisements. This initiative was conceived to counter the excessive ad presence found on various other anime streaming sites.",
         link: "https://github.com/Sentinail/hatsu-project.git",
-        iFrame: "https://www.youtube.com/embed/OO38R4UvcBY?si=nK5Vi_J2YscBNj9e",
+        iFrame: "https://www.youtube.com/embed/UvQ1fPeSq8U?si=l7OoDgNvf7JQDOVL",
         websiteLink: "https://hatsu.vercel.app"
     },
     {

@@ -5,7 +5,8 @@ export const SettingsContainer = styled.div`
     bottom: 0;
     right: 10px;
     width: 200px;   
-    height: ${props => {return props.$settingIsVisible ? 500 : 0}}px;
+    height: ${props => {return props.$settingIsVisible ? 300 : 0}}px;
+    max-height: 300px;
     background-color: ${props => {return props.$secondaryColor}};
     opacity: ${props => {return props.$settingIsVisible ? 1 : 0}};
     border: 2px solid ${props => {return props.$primaryColor}};
