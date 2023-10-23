@@ -37,6 +37,8 @@ export const PortfolioContainer = styled.div`
 
         & .ps {
             color: ${props => {return props.$primaryColor}};
+            max-height: 80px;
+            overflow-y: scroll;
         }
 
         & .image {

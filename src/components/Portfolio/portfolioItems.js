@@ -13,8 +13,8 @@ module.exports = [
         description: "Gab Express functions as a charitable online platform where users have the opportunity to offer assistance to individuals requiring support, while also being able to view a community engagement leaderboard.",
         link: "https://github.com/Sentinail/gab-express",
         iFrame: "https://www.youtube.com/embed/Dd54gHnztKw",
-        websiteLink: "https://gab-express.vercel.app/home",
-        ps: "The API is hosted on render for free therefore 15 mins of the website's in-activeness will cause the API to spin down"
+        websiteLink: "https://gab-express.vercel.app",
+        ps: "As my free AWS EC2 instance is about to expire, I will be shutting down the API for this specific project. While you can still access and view the project's front-end, please note that all the planned features and functionalities will no longer be operational."
     },
     {
         title: "React Chess Game",
