@@ -1,25 +1,12 @@
 import { styled } from "styled-components";
 
 export const ProfileContainer = styled.div`
-    width: 100%;
+    text-align: left;
     height: 100%;
-    position: relative;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    z-index: 2;
-
-    padding: 20px;
 
     & img {
-        width: 50%;
-        height: auto;
-        border-radius: 20px;
-        min-width: 300px;
-        transform: scaleX(-1);
+        height: 100%;
+        left: 10%;
     }
 
     @keyframes slide-right-fade {

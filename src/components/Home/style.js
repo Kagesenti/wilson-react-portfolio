@@ -1,24 +1,15 @@
 import { styled } from "styled-components";
 
 export const HomeContainer = styled.div`
+    position: relative;
     width: 100%;    
     height: calc(100vh - 80px);
     background-color: ${props => {return props.$secondaryColor}};
-
-    padding: 20px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-x: hidden;
+    overflow: hidden;
 
     @media screen and (max-width: 768px) {
-        position: relative;
-        display: block;
         min-height: calc(100vh - 80px);
-        height: auto;
     }   
-
 `
 
 export const HShape = styled.div`
