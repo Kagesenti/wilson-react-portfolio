@@ -42,7 +42,7 @@ function Blocks() {
   return (
     <>
       <CardContainer ref={ref} className='slide-right'>
-        <Cards quantity={"10+"} category={"PROJECTS COMPLETED"}></Cards>
+        <Cards quantity={"..."} category={"PROJECTS COMPLETED"}></Cards>
         <Cards quantity={"1"} category={"YEAR/S OF EXPERIENCE"}></Cards>
         <Cards quantity={"..."} category={"HAPPY CLIENTS"}></Cards>
         <Cards quantity={"..."} category={"CUSTOMER REVIEWS"}></Cards>
